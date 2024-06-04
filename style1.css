@@ -1,0 +1,16 @@
+body {background-color: coral;}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    /* background-image: linear-gradient(to right,  #cc865a,rgb(202, 115, 129) ); */
+}
+.nav-link:hover{
+    color: rgb(202, 115, 129);
+}
+.id{
+    margin-left: 20px;
+}

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style1.css">
+  <!-- Bootstrap CDN start -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap CDN End -->
+  <!-- Owl Carousel CDN start-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <script src="script.js"></script>
+  <!-- Owl Carousel CDN End-->
+  <!-- icon cdn strat  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- icon cdn end  -->
+  <style>
+    .custom-dropdown {
+      display: inline-block;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 1000;
+      display: none;
+      float: left;
+      min-width: 10rem;
+      padding: .5rem 0;
+      margin: .125rem 0 0;
+      font-size: 1rem;
+      color: #6098cf;
+      text-align: left;
+      list-style: none;
+      background-color: burlywood;
+      background-clip: padding-box;
+      border: 1px solid rgba(255, 254, 254, 0.15);
+      border-radius: .25rem;
+    }
+
+    .custom-dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .owl-item img {
+
+      width: 200%;
+      height: auto;
+      box-sizing: border-radius;
+      position: relative;
+    }
+
+    #bannerimg img {
+      height: 654px;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      /* Ensure the navbar appears above other content */
+      background-color: #debfbf;
+      /* Optional: Change the background color */
+      box-shadow: 0 2px 4px rgba(249, 246, 246, 0.1);
+      /* Optional: Add a shadow */
+    }
+
+    .item img {
+      height: 300px;
+      width: 300px;
+    }
+
+    #lidecor {
+      text-decoration: none;
+      color: black;
+    }
+
+    #lidecor:hover {
+      color: rgb(255, 251, 0);
+      /* Change color on hover */
+
+    }
+
+
+    #logo img {
+      height: 60px;
+
+    }
+
+    .list {
+      font-size: large;
+      color: solid rgb(190, 174, 174);
+      text-decoration: underline
+    }
+
+    /* h4{
+        background-color:;
+      } */
+    * {
+      box-sizing: border-box;
+    }
+
+    .imag {
+      height: 200px;
+    }
+    .footer {
+      background-color: #debfbf;
+      color: #debfbf;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- nav bar start -->
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="images/logo patrona.png" alt="" height="60px" width="60px">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0"
+          style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: large;" ;>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home </a>
+          </li>
+
+          <div class="custom-dropdown">
+            <a class="nav-link" href="Category.html"> Category</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="Dog.html">Dog</a></li>
+              <li><a class="dropdown-item" href="Cat.html">Cat</a></li>
+              <li><a class="dropdown-item" href="Rabbit.html">Rabbit</a></li>
+            </ul>
+          </div>
+
+
+
+          <li class="nav-item">
+            <a class="nav-link" href="Gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="FAQ.html">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="About us.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contact us.html">Contact us</a>
+          </li>
+        </ul>
+        <div class="d-flex justify-content-center align-items-center gap-3">
+          <a href="Signup.html" class="text-dark text-decoration-none px-3 py-1 rounded-4"
+            style="background-color:peru;">Sign Up</a>
+          <a href="login.html" class="text-dark  text-decoration-none px-3 py-1 rounded-4"
+            style="background-color:peru;">Login</a>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+  <br><br>
+  <br><br>
+  <!-- nav bar End -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="images/cat/raga muffin 6.jpg" alt="..." height="500px" width="500px">
+      </div>
+      <div class="col-md-6">
+        <p>The Ragamuffin is a large, long-bodied cat. She is heavily boned with a long tail and a plush coat. The
+          Ragamuffin appears even bigger than she is.The Ragamuffin is a placid cat but does not really go limp when you
+          hold her. She is even tempered and gets along well with all family members. Changes in routine generally do
+          not upset her. She is an ideal companion for those in apartments.To learn the history of the Ragamuffin, begin
+          with the history of the Ragdoll. Despite the colorful and completely impossible legend of the Ragdoll's
+          origin, that beautiful cat is one of the most popular breeds. What can be verified is that the ragdoll was
+          started in the 1960s in California. The Ragdoll may well have been a mix of the Burmese, Birman, and the
+          Persian, but the cat credited as the original ragdoll is a white cat named Josephine. The Ragdolls are thus
+          considered Daughters of Josephine.
+
+          The creator of the Ragdoll, Ann Baker, felt that in Josephine she had a cat that was so placid that she went
+          limp when she was held, which is the origin of the name.
+
+          Eventually Ragdoll breeders disagreed on where they wanted the breed to go. One group wanted to continue to
+          outcross the Ragdolls and wanted other colors and patterns to be accepted within the breed. This disagreement
+          resulted in a new breed, one that could look almost identical to the ragdoll in color and pattern, or one that
+          could look completely different.
+
+          This new breed was called the Ragamuffin, and they are also considered to be daughters of Josephine.
+
+
+
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Owl carousel start -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <br><br>
+        <div class="owl-carousel owl-theme">
+          <div class="item"><img src="images/cat/raga muffin 2.jpg" alt="Placeholder Image 1"></div>
+          <div class="item"><img src="images/cat/raga muffin 3.jpg" alt="Placeholder Image 2"></div>
+          <div class="item"><img src="images/cat/raga muffin 4.jpg" alt="Placeholder Image 3"></div>
+          <div class="item"><img src="images/cat/raga muffin 5.jpg" alt="Placeholder Image 4"></div>
+          <div class="item"><img src="images/cat/raga muffin 6.jpg" alt="Placeholder Image 5"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and jQuery CDN start-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+
+  <!-- Owl Carousel JS CDN start -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- Owl Carousel JS CDN End -->
+  <script>
+    $(document).ready(function () {
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 3
+          },
+          1000: {
+            items: 5
+          }
+        }
+      });
+    });
+  </script>
+  <!-- Owl carousel End -->
+  <br>
+  <!-- Footer -->
+  <div class="footer">
+  <footer class="text-center text-lg-start text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="bi bi-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="bi bi-instagram"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <img src="images/logo patrona.png" height="80px" width="80px">
+            <h5 class="text-uppercase fw-bold mb-4">
+              PATRONA PUPPY
+            </h5>
+            <p style="color: #212529;"></p>
+            <h6> The PATRONA puppy website is a website which is actually encyclopedia about all
+              types of dogs. The Famous Veteran Patrona is fond of animals specially Dogs, Cats,
+              Rabbits.</h6>
+          </div>
+          <!-- Grid column -->
+
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 mt-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Quick links
+            </h6>
+            <p>
+              <a href="index.html" class="text-reset" id="lidecor">Home</a>
+            </p>
+            <p>
+              <a href="Category.html" class="text-reset" id="lidecor">Category</a>
+            </p>
+            <p>
+              <a href="Gallery.html" class="text-reset" id="lidecor">Gallery</a>
+            </p>
+            <p>
+              <a href="FAQ.html" class="text-reset" id="lidecor">FAQ</a>
+            </p>
+            <p>
+              <a href="About us.html" class="text-reset" id="lidecor">About us</a>
+            </p>
+            <p>
+              <a href="Contact us.html" class="text-reset" id="lidecor">Contact us</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 mt-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="bi bi-house-door me-3" href=""></i> Karachi , Pakistan</p>
+            <p>
+              <i class="bi bi-envelope me-3"></i>
+              syedmozzam01@gmail.com
+            </p>
+            <p><i class="bi bi-telephone me-3"></i> 0318-0233067</p>
+
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+
+  </footer>
+</div>
+  <!-- Footer -->
+</body>
+
+</html>

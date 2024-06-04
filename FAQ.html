@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style1.css">
+  <!-- Bootstrap CDN start -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap CDN End -->
+  <!-- icon cdn strat  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+   <!-- icon cdn end  -->
+
+  <style>
+    .custom-dropdown {
+      display: inline-block;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 1000;
+      display: none;
+      float: left;
+      min-width: 10rem;
+      padding: .5rem 0;
+      margin: .125rem 0 0;
+      font-size: 1rem;
+      color: #6098cf;
+      text-align: left;
+      list-style: none;
+      background-color: burlywood;
+      background-clip: padding-box;
+      border: 1px solid rgba(0, 0, 0, .15);
+      border-radius: .25rem;
+    }
+
+    .custom-dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .owl-item img {
+
+      width: 200%;
+      height: auto;
+      box-sizing: border-radius;
+      position: relative;
+    }
+
+    #bannerimg img {
+      height: 654px;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      /* Ensure the navbar appears above other content */
+      background-color: #debfbf;
+      /* Optional: Change the background color */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      /* Optional: Add a shadow */
+    }
+
+    .item img {
+      height: 300px;
+      width: 300px;
+    }
+
+    #lidecor {
+      text-decoration: none;
+      color: black;
+    }
+
+    #lidecor:hover {
+      color: rgb(255, 251, 0);
+      /* Change color on hover */
+
+    }
+    .footer{
+      background-color: #debfbf; /* Set the background color you desire */
+            color: #debfbf; /* Set text color to contrast with the background */
+            padding: 20px; /* Add padding for spacing */
+            text-align: center; /* Align text to the center */
+    }
+    h1 {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      text-decoration: underline;
+      margin-top: 30px !important;
+      font-size: 60px;
+      margin-bottom: 30px;
+      color: black;
+    }
+
+    h2 {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      text-decoration: underline;
+      margin-top: 30px !important;
+      font-size: 60px;
+      margin-bottom: 30px;
+      color: green;
+    }
+
+    h2:hover {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      text-decoration: underline;
+      margin-top: 30px !important;
+      font-size: 60px;
+      margin-bottom: 30px;
+      color: black;
+    }
+
+    .accordian-item {
+      text-align: center;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- nav bar start -->
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="images/logo patrona.png" alt="" height="60px" width="60px">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0"
+          style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: large;" ;>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home </a>
+          </li>
+
+          <div class="custom-dropdown">
+            <a class="nav-link" href="Category.html"> Category</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="Dog.html">Dog</a></li>
+              <li><a class="dropdown-item" href="Cat.html">Cat</a></li>
+              <li><a class="dropdown-item" href="Rabbit.html">Rabbit</a></li>
+            </ul>
+          </div>
+
+          <li class="nav-item">
+            <a class="nav-link" href="Gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="FAQ.html">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="About us.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contact us.html">Contact us</a>
+          </li>
+        </ul>
+        <div class="d-flex justify-content-center align-items-center gap-3">
+           <a href="Signup.html" class="text-dark text-decoration-none px-3 py-1 rounded-4"
+            style="background-color:peru;">Sign Up</a>
+          <a href="login.html" class="text-dark  text-decoration-none px-3 py-1 rounded-4"
+            style="background-color:peru;">Login</a>
+         
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- nav bar End -->
+
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="caro.webp" class="d-block w-100" alt="..." height="500px" width="400px">
+      </div>
+      <div class="carousel-item">
+        <img src="Benefits-of-Pets.jpeg" class="d-block w-100" alt="..." height="500px" width="400px">
+      </div>
+      <div class="carousel-item">
+        <img src="i.jpg" class="d-block w-100" alt="..." height="500px" width="400px">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <h1>FREQUENTLY ASKED QUESTIONS</h1>
+  <p style="text-align: center; font-size: 20px; color: black solid;">A list of questions and answers about a particular
+    subject,<br>
+    especially one giving basic information for users of a website.</p>
+  <div class="container">
+    <h2>
+     VACCINATED SCHEDULE
+    </h2>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            HOW MANY MONTH IS A THEY SHOULD BE VACCINATED?
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+          data-bs-parent="#accordionFlushExample">
+          <h4>DOG</h4>1. this is usually between 6 and 8 weeks and then every two weeks until approximately four months
+          of age when it will receive the final round.<BR>
+          <h4>cat</h4>Immunizations are started at 6-8 weeks of age and are repeated every 3-4 weeks until the kitten is
+          4 months old.<h4>Rabbit</h4>Rabbits can be vaccinated from five weeks old. You'll also need a single, separate
+          vaccine to protect against R(V)HD2 at 10 weeks old. An annual vaccine that protects against all three diseases
+          in one dose can be given from five weeks old.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            WHAT ARE THE NAME OF THEY VACCINES?
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <h4>Dog</h4>The core vaccines are canine distemper, adenovirus-2, and parvovirus. Rabies vaccination is
+            mandatory in many different jurisdictions. Canine respiratory disease vaccines include Parainfluenza 3, and
+            Bordetella bronchiseptica. Other important bacterial vaccines include those against Lyme disease and
+            Leptospirosis <h4>Cat</h4>Combination Vaccine FVRCP, or feline distemper, FeLV for felines at risk of
+            exposure to feline leukemia virus (cats that are unsupervised outdoors), and rabies annually as required by
+            law. *A combination vaccine includes feline distemper, rhinotracheitis, and calicivirus.<h4>Rabbit</h4>
+            Combination Vaccine FVRCP, or feline distemper, FeLV for felines at risk of exposure to feline leukemia
+            virus (cats that are unsupervised outdoors), and rabies annually as required by law. *A combination vaccine
+            includes feline distemper, rhinotracheitis, and calicivirus.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          HOW LONG DO THEY VACCINES LAST?
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+        data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <h4>Dog</h4>To maintain the best protection against infectious diseases, revaccinations have proven very
+          successful. As vaccines are improved over time, some do not need to be given as often, depending on individual
+          circumstances. Most dogs with low-risk lifestyles can be vaccinated every three years with the core vaccines
+          and as needed for any non-core vaccines (most non-core vaccines require annual boosters). Your veterinarian
+          will discuss the need and frequency of booster vaccinations for your dog based on your dog's needs and
+          lifestyle.<h4>Cat</h4>The AAFP vaccination guidelines recommend that low-risk adult cats be vaccinated every
+          three years with the core vaccines, and then as determined by your veterinarian for any non-core vaccines.
+          Some vaccine manufacturers have developed approved three-year doses for many of the core vaccines. <h4>Rabbit
+          </h4>Vaccination is very effective. Your rabbits can be injected from five weeks old. They'll need a booster
+          with the triple combination vaccine every 12 months.
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <h2>NUTRITIONS TIPS</h2><br><br>
+  <div class="container">
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            WHAT ARE THEY NATURAL DIET?
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body"> <H4>DOG</H4> In the case of dogs there is quite a lot of variety in their natural diet. Dogs are carnivores and the primary component of their diet is prey. This could be small animals mice, voles, rabbits, birds, insects and so forth or it could be larger prey caught with the help of a pack. Either way, they eat everything the internal organs, the meat, the bones, the lot. <br> <h4> CAT</h4>Being true carnivores they survived mainly on fresh small herbivores; rodents, birds and reptiles plus insects, and in the case of large cats, ruminants such as buffalo and deer. A cat will eat the whole of its prey fresh, including entire rabbits (gut contents, offal and nervous tissue included). <h4>RABBIT</h4> Good quality hay and/or grass, always available, should constitute the majority of rabbits' diets. - Rabbits graze, naturally eating grass/other plants for long periods, mainly at dawn and dusk. - Rabbits' digestive systems need grass and/or hay to function properly.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            WHAT HOMEMADE FOOD HAS VITAMINS AND MINERALS FOR THEM?
+        
+
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body"> <H4>DOG</H4> Good homemade food for healthy dogs includes all the vitamins, calcium, proteins and minerals your pet needs to stay healthy. You can add ground beef, chicken, lamb or venison, as well as vegetables, such as zucchini, carrots, parsnips, beets, yams, butternut squash, and sweet potatoes.. <H4>CAT</H4> homemade cat food recipe includes sufficient animal protein, calcium, phosphorus, iodine and vitamins. This is usually obtained from red meat, liver, kidney, heart, chicken and sometimes milk. <H4>RABBIT</H4> Good homemade food is vegetables include such things as bell peppers, zucchini, cucumber and brussels sprouts. You can also give such greens as carrot tops, dark lettuces, herbs, radish tops and sprouts, okra leaves and clover sprouts.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            IS ROTI SAFE FOR THEM?
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body"><H4>DOG</H4>Chapati and roti or flatbread on the other hand aren't considered toxic. However, for dogs there really aren't any benefits to feeding it to them, even if it's as an occasional treat. The flavored flatbreads should also be kept away from them since they may contain ingredients that are harmful to pets.<H4>CAT</H4> Cats shouldn't eat bread on a regular basis but, rather, reserve it for a once in a while treat. <H4>RABBIT</H4> Please don't give your rabbit any wheat-based items like bread, pasta, rice, roti etc. A rabbit probably would not die from it but they would become sick as they can't digest grain like humans can. Rabbits have delicate and complex digestive systems.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <h2>ENVIRONMENTAL EFFECT</h2><br><br>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            HOW DOES THE ENVIRONMENT AFFECT ON A DOG'S BEHAVIOUR?
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body"> <H4>DOG</H4>When your dog first experiences a new location or environment, there's no way of knowing how they'll react. New sights, sounds, and smells could make them fearful, aggressive, or over-excited, but with the proper training and introduction, most dogs will quickly adapt and start taking every new location in stride. <H4>CAT</H4> Cats are territorial and become very attached to places. They are naturally frightened of unfamiliar places and smells. For example, if you move your cat to a new home, it may be frightened by the presence of cats that have already established territories in the area. <H4>RABBIT</H4> In rabbits, the normal behavioral repertoire includes foraging and social behaviors, but confinement in barren cages reduces locomotion and may lead to altered social behavior and the development of stereotypies (Morisse and Maurice, 1997, Hansen and Berthelsen, 2000, Verga et al., 2007).</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+           WHAT ARE THE EFFECT OF NOISY ENVIRONMENT ON DOG?
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body"><H4>DOG</H4>  can lead to stress and anxiety in dogs, and in severe cases, it may cause actual physical damage to their sensitive ear structures. Therefore, it's important to be mindful of the volume when playing music around your canine companion. <H4>CAT</H4>Cats associate loud noise with danger, which is why they have a natural aversion to sudden bangs and booms. But while it's normal for cats to dislike noise to a certain extent, some cats can be so scared of noises that they develop heightened sensitivity to sound, or so-called 'noise phobia'. <H4>RABBIT</H4>Rabbits hear sounds more clearly than humans and loud noises can terrify them, sending their adrenal glands into overdrive, and their heart racing. Some rabbits can literally die of fright.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+           HOW CAN THE ENVIRONMENT AFFECT A DOG?
+
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body"><H4>DOG</H4> Your dog needs a safe, comfortable place to rest, situated in a dry, draught-free area. Living in a cold or damp place can lead to unnecessary suffering. If your dog lives outside, it will need protection from adverse weather or other threats. <H4>CAT</H4> Living in a cold or wet place, without shelter, can lead to unnecessary suffering. A cat must be able to avoid things that scare it, including other cats. They all need a place to hide where they feel safe. They often feel safest when high up. <H4>RABBIT</H4> Your rabbit's resting area should have at least two compartments. A darkened sheltered area for sleeping away from noise and another for eating/relaxing. All areas should be well ventilated, dry and draught free as damp, poorly ventilated, hot or dirty environments can cause illness.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<br><br>
+
+  <!-- Footer -->
+  <div class="footer">
+  <footer class="text-center text-lg-start text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="bi bi-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="bi bi-instagram"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <img src="images/logo patrona.png" height="80px" width="80px">
+            <h5 class="text-uppercase fw-bold mb-4">
+              PATRONA PUPPY
+            </h5>
+            <p style="color: #212529;"></p>
+            <h6> The PATRONA puppy website is a website which is actually encyclopedia about all
+              types of dogs. The Famous Veteran Patrona is fond of animals specially Dogs, Cats,
+              Rabbits.</h6>
+          </div>
+          <!-- Grid column -->
+
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 mt-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Quick links
+            </h6>
+            <p>
+              <a href="index.html" class="text-reset" id="lidecor">Home</a>
+            </p>
+            <p>
+              <a href="Category.html" class="text-reset" id="lidecor">Category</a>
+            </p>
+            <p>
+              <a href="Gallery.html" class="text-reset" id="lidecor">Gallery</a>
+            </p>
+            <p>
+              <a href="FAQ.html" class="text-reset" id="lidecor">FAQ</a>
+            </p>
+            <p>
+              <a href="About us.html" class="text-reset" id="lidecor">About us</a>
+            </p>
+            <p>
+              <a href="Contact us.html" class="text-reset" id="lidecor">Contact us</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 mt-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="bi bi-house-door me-3" href=""></i> Karachi , Pakistan</p>
+            <p>
+              <i class="bi bi-envelope me-3"></i>
+              syedmozzam01@gmail.com
+            </p>
+            <p><i class="bi bi-telephone me-3"></i> 0318-0233067</p>
+
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+
+  </footer>
+</div>
+  <!-- Footer -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login In</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Default styles */
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #ccc; /* Add border CSS */
+}
+.login {
+    font-size: 24px; /* Set the font size */
+    color: #333; /* Set the text color */
+    margin-bottom: 20px; /* Add some space below the heading */
+}
+input[type="text"],
+input[type="password"],
+button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* Add border to inputs and button */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Hover effects */
+input[type="text"]:hover,
+input[type="password"]:hover,
+button:hover {
+    border-color: #999; /* Darker border color on hover */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker background color on hover */
+}
+
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>login</h1>
+        <form autocomplete="off">
+            <input type="text" id="loginUsername" placeholder="Username" required><br>
+            <input type="password" id="loginPassword" placeholder="Password" required><br>
+            <button onclick="login()" type="button">login</button>
+        </form>
+
+        
+    <script src="script.js"></script>
+</body>
+
+</html>
